@@ -1,224 +1,314 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 
-header{
-    background: no-repeat url(./img/оранж\ круг.png);
-    position: relative;
-    display: flex;
-    font-family: 'Montserrat', sans-serif;
+header {
+  /* background: no-repeat url(./img/оранж\ круг.png); */
+  position: relative;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
 }
 
-header .my-photo{
-    display: block;
-    width: 27%;
-    height: auto;
-    position: absolute;
-    top: 12vh;
-    left: 12%;
-    z-index: 5;
+header .my-photo {
+  display: block;
+  width: 27%;
+  height: auto;
+  position: absolute;
+  top: 12vh;
+  left: 12%;
+  z-index: 5;
 }
 
-header .circle-bg{
-    display: block;
-    width: 25%;
-    position: absolute;
-    right: 0;
+header .circle-bg {
+  display: block;
+  width: 25%;
+  /* position: relative; */
+  margin-left: auto;
+  margin-top: auto;
+  /* right: -108px; */
+  /* top: -94px; */
 }
 
-header .orange-bg{
-    display: block;
+header .orange-bg {
+  display: block;
+  width: 50%;
+  height: 54vh;
+  position: absolute;
+  left: -20%;
+}
+
+header .container {
+  width: 47%;
+  position: absolute;
+  left: 40%;
+  top: 12vh;
+}
+
+header .container h1 {
+  font-size: 104px;
+  color: #282828;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 10px;
+  margin-left: -90px;
+  display: block;
+  z-index: 9;
+  position: relative;
+}
+
+header .container h2,
+h3 {
+  font-size: 40px;
+  font-weight: 100;
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  margin-top: 40px;
+}
+
+header .container .goal {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+header .container .goal::after {
+  content: url(./img/линия_1.png);
+  display: block;
+  margin-top: 15px;
+  margin-left: -140px;
+}
+
+header .container .my-links {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+header .container .my-links .link {
+  font-size: 24px;
+  width: 48%;
+  margin-bottom: 10px;
+  list-style-position: inside;
+}
+
+header .container .my-links .link a {
+  color: #282828;
+}
+
+@media (max-width: 1500px) {
+  header .orange-bg {
+    height: 48vh;
+  }
+
+  header .container {
     width: 50%;
-    height: 65vh;
-    position: absolute;
-    left: -20%;
-}
+    left: 42%;
+  }
 
-header .container{
-width: 47%;
-position: absolute;
-left: 40%;
-top: 12vh;
-}
+  header .container h1 {
+    font-size: 86px;
+    margin-bottom: 0;
+    margin-left: -70px;
+  }
 
-header .container h1{
-    font-size: 104px;
-    color: #282828 ;
-    font-weight: 800;
-    line-height: 1;
-    margin-bottom: 10px;
-    margin-left: -90px;
-    display: block;
-    z-index: 9;
-    position: relative;
-}
+  header .container h2,
+  h3 {
+    font-size: 36px;
+    margin-top: 30px;
+  }
 
-header .container h2, h3{
-    font-size: 40px;
-    font-weight: 100;
-    color: #000000;
-    font-family: 'Open Sans', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 12px;
-    margin-top: 40px;
-}
+  header .container .my-links {
+    justify-content: space-between;
+    width: 100%;
+  }
 
-header .container .goal{
-    font-size: 24px;
-    margin-top: 10px;
-}
-
-header .container .goal::after{
-    content: url(./img/линия_1.png);
-    display: block;
-    margin-top: 15px;
-    margin-left: -140px;
-}
-
-header .container .my-links{
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-header .container .my-links .link{
-    font-size: 24px;
+  header .container .my-links .link {
+    font-size: 20px;
     width: 48%;
-    margin-bottom: 10px;
-    list-style-position: inside;
+  }
 }
 
-header .container .my-links .link a{
-color: #282828;
-}
+@media (max-width: 1135px) {
+  header .my-photo {
+    width: 30%;
+    left: 8%;
+  }
 
-@media (max-width:1500px){
-    header .circle-bg{
-        width: 22%;
-    }
-    
-    header .orange-bg{
-        height: 52vh;
-    }
-    
-    header .container{
-    width: 50%;
-    left: 42%;
-    }
-    
-    header .container h1{
-        font-size: 86px;
-        margin-bottom: 0;
-        margin-left: -70px;
-    }
-    
-    header .container h2, h3{
-        font-size: 36px;
-        margin-top: 30px;
-    }
-    
-    header .container .my-links{
-        justify-content: space-between;
-    }
-    
-    header .container .my-links .link{
-        font-size: 20px;
-        width: 45%;
-    }
-}
+  header .circle-bg {
+    width: 30%;
+  }
 
-@media (max-width:1135px){
-    header .my-photo{
-        /* display: block; */
-        width: 30%;
-        /* height: auto; */
-        /* position: absolute; */
-        /* top: 12vh; */
-        left: 8%;
-        /* z-index: 5; */
-    }
-    
-    header .circle-bg{
-        /* display: block; */
-        width: 26%;
-        /* position: absolute; */
-        right: 0;
-        top: 0;
-    }
-    
-    header .orange-bg{
-        /* display: block; */
-        /* width: 45%; */
-        height: 44vh;
-        /* position: absolute; */
-        /* left: -20%; */
-    }
-    
-    header .container{
+  header .orange-bg {
+    height: 44vh;
+  }
+
+  header .container {
     width: 47%;
-    /* position: absolute; */
     left: 42%;
-    /* top: 12vh; */
-    }
+  }
+
+  header .container h1 {
+    font-size: 70px;
+  }
+
+  header .container h2,
+  h3 {
+    font-size: 38px;
+    letter-spacing: 8px;
+  }
+
+  header .container .goal::after {
+    content: url(./img/линия_2.png);
+    margin: 8px auto 0 0;
+  }
+
+  header .container .my-links {
+    flex-direction: column;
+  }
+
+  header .container .my-links .link {
+    font-size: 24px;
+    width: 90%;
+  }
+}
+
+@media (max-width: 770px) {
+  header .my-photo {
+    width: 33%;
+    top: 10vh;
+  }
+
+  header .circle-bg {
+    width: 24%;
+  }
+
+  header .orange-bg {
+    height: 38vh;
+  }
+
+  header .container {
+    width: 50%;
+    left: 45%;
+    top: 10vh;
+  }
+
+  header .container h1 {
+    font-size: 54px;
+    margin-left: -55px;
+  }
+
+  header .container h2,
+  h3 {
+    font-size: 31px;
+    letter-spacing: 5px;
+  }
+
+  header .container .goal{
+    font-size: 20px;
+  }
+
+  header .container .goal::after {
+    content: url(./img/линия_2.png);
+  }
+
+  header .container .my-links {
+    min-width: 120%;
+    margin: 12px 0 0 -75px;
+  }
+
+  header .container .my-links .link {
+    font-size: 20px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  header .my-photo {
+    top: 7vh;
+  }
+
+  header .orange-bg {
+    height: 38vh;
+  }
+
+  header .container {
+    width: 50%;
+    left: 45%;
+    top: 7vh;
+  }
+
+  header .container h1 {
+    font-size: 42px;
+    margin-left: -40px;
+  }
+
+  header .container h2,
+  h3 {
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
+
+  header .container .goal{
+    font-size: 18px;
+  }
+
+  header .container .goal::after {
+    content: url(./img/линия_3.png);
+  }
+
+  header .container .contacts{
+    margin-left: -95px;
+  }
+
+  header .container .my-links {
+    min-width: 120%;
+    margin: 12px 0 0 -95px;
+  }
+
+  header .container .my-links .link {
+    list-style: none;
+    font-size: 18px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 360px){
+      header .orange-bg {
+        height: 32vh;
+      }
     
-    header .container h1{
-        font-size: 70px;
-        /* color: #282828 ; */
-        /* font-weight: 800; */
-        /* line-height: 1; */
-        /* margin-bottom: 0; */
-        /* margin-left: -80px; */
-        /* display: block; */
-        /* z-index: 9; */
-        /* position: relative; */
-    }
+      header .container h1 {
+        font-size: 33px;
+        margin-left: -30px;
+      }
     
-    header .container h2, h3{
-        font-size: 38px;
-        /* font-weight: 100; */
-        /* color: #000000; */
-        /* font-family: 'Open Sans', sans-serif; */
-        /* text-transform: uppercase; */
-        letter-spacing: 8px;
-        /* margin-top: 30px; */
-    }
+      header .container h2,
+      h3 {
+        font-size: 18px;
+        letter-spacing: 2px;
+      }
+
+      header .container .goal{
+        font-size: 16px;
+      }
+
+      header .container .contacts{
+        margin-left: -60px;
+      }
     
-    header .container .goal{
-        /* font-size: 24px; */
-        /* margin-top: 10px; */
-    }
+      header .container .my-links {
+        margin: 12px 0 0 -65px;
+      }
     
-    header .container .goal::after{
-        /* content: url(./img/линия_1.png); */
-        /* display: block; */
-        margin: 8px auto 0 0;
-        /* margin-top: 8px; */
-        /* margin-left: -15px; */
-    }
-    
-    header .container .my-links{
-        /* margin-top: 20px; */
-        /* display: flex; */
-        /* flex-wrap: wrap; */
-        /* justify-content: space-evenly; */
-        flex-direction: column;
-    }
-    
-    header .container .my-links .link{
-        font-size: 24px;
-        width: 90%;
-        /* margin-bottom: 10px; */
-        /* list-style-position: inside; */
-    }
-    
-    header .container .my-links .link a{
-    /* color: #282828; */
-    }
+      header .container .my-links .link {
+        font-size: 14px;
+      }
 }
