@@ -164,10 +164,13 @@ header .container .my-links .link a {
     font-size: 26px;
   }
 
+  header .container .goal{
+    font-size: 16px;
+  }
+
   header .container .goal::after {
     content: url(./img/линия_2.png);
     margin: 8px auto 0 0;
-    font-size: 16px;
   }
 
   header .container .my-links {
@@ -176,7 +179,7 @@ header .container .my-links .link a {
   }
 
   header .container .my-links .link {
-    font-size: 16px;
+    font-size: 15px;
     width: 98%;
   }
 }
@@ -200,19 +203,19 @@ header .container .my-links .link a {
   }
 
   header .container h1 {
-    font-size: 46px;
-    margin-left: -55px;
+    font-size: 45px;
+    margin-left: -45px;
   }
 
   header .container h2,
   h3 {
     font-size: 24px;
     letter-spacing: 4px;
-    margin-top: 14px;
+    margin-top: 12px;
   }
 
   header .container .goal {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   header .container .goal::after {
@@ -220,11 +223,11 @@ header .container .my-links .link a {
   }
 
   header .container .my-links {
-    margin: 12px 0 0 0;
+    margin: 6px 0 0 0;
   }
 
   header .container .my-links .link {
-    font-size: 14px;
+    font-size: 13px;
     width: 100%;
   }
 }
