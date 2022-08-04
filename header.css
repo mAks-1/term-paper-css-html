@@ -5,11 +5,7 @@
   text-decoration: none;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
-
 header {
-  /* background: no-repeat url(./img/оранж\ круг.png); */
   position: relative;
   display: flex;
   font-family: "Montserrat", sans-serif;
@@ -17,7 +13,7 @@ header {
 
 header .my-photo {
   display: block;
-  width: 27%;
+  width: 25%;
   height: auto;
   position: absolute;
   top: 12vh;
@@ -28,11 +24,8 @@ header .my-photo {
 header .circle-bg {
   display: block;
   width: 25%;
-  /* position: relative; */
   margin-left: auto;
   margin-top: auto;
-  /* right: -108px; */
-  /* top: -94px; */
 }
 
 header .orange-bg {
@@ -51,26 +44,25 @@ header .container {
 }
 
 header .container h1 {
-  font-size: 104px;
+  font-size: 92px;
   color: #282828;
   font-weight: 800;
   line-height: 1;
   margin-bottom: 10px;
-  margin-left: -90px;
+  margin-left: -80px;
   display: block;
   z-index: 9;
   position: relative;
 }
 
-header .container h2,
-h3 {
-  font-size: 40px;
+header .container h2, h3 {
+  font-size: 38px;
   font-weight: 100;
   color: #000000;
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   letter-spacing: 12px;
-  margin-top: 40px;
+  margin-top: 32px;
 }
 
 header .container .goal {
@@ -93,8 +85,8 @@ header .container .my-links {
 }
 
 header .container .my-links .link {
-  font-size: 24px;
-  width: 48%;
+  font-size: 22px;
+  width: 50%;
   margin-bottom: 10px;
   list-style-position: inside;
 }
@@ -114,15 +106,21 @@ header .container .my-links .link a {
   }
 
   header .container h1 {
-    font-size: 86px;
+    font-size: 74px;
     margin-bottom: 0;
     margin-left: -70px;
   }
 
   header .container h2,
   h3 {
-    font-size: 36px;
-    margin-top: 30px;
+    font-size: 28px;
+    margin-top: 20px;
+    letter-spacing: 6px;
+  }
+
+  header .container .goal {
+    font-size: 18px;
+    margin-top: 8px;
   }
 
   header .container .my-links {
@@ -131,8 +129,7 @@ header .container .my-links .link a {
   }
 
   header .container .my-links .link {
-    font-size: 20px;
-    width: 48%;
+    font-size: 16px;
   }
 }
 
@@ -140,6 +137,7 @@ header .container .my-links .link a {
   header .my-photo {
     width: 30%;
     left: 8%;
+    top: 7vh;
   }
 
   header .circle-bg {
@@ -153,37 +151,39 @@ header .container .my-links .link a {
   header .container {
     width: 47%;
     left: 42%;
+    top: 8vh;
   }
 
   header .container h1 {
-    font-size: 70px;
+    font-size: 60px;
+    width: 60%;
   }
 
   header .container h2,
   h3 {
-    font-size: 38px;
-    letter-spacing: 8px;
+    font-size: 26px;
   }
 
   header .container .goal::after {
     content: url(./img/линия_2.png);
     margin: 8px auto 0 0;
+    font-size: 16px;
   }
 
   header .container .my-links {
     flex-direction: column;
+    margin-top: 10px;
   }
 
   header .container .my-links .link {
-    font-size: 24px;
-    width: 90%;
+    font-size: 16px;
+    width: 98%;
   }
 }
 
 @media (max-width: 770px) {
   header .my-photo {
     width: 33%;
-    top: 10vh;
   }
 
   header .circle-bg {
@@ -197,22 +197,22 @@ header .container .my-links .link a {
   header .container {
     width: 50%;
     left: 45%;
-    top: 10vh;
   }
 
   header .container h1 {
-    font-size: 54px;
+    font-size: 46px;
     margin-left: -55px;
   }
 
   header .container h2,
   h3 {
-    font-size: 31px;
-    letter-spacing: 5px;
+    font-size: 24px;
+    letter-spacing: 4px;
+    margin-top: 14px;
   }
 
-  header .container .goal{
-    font-size: 20px;
+  header .container .goal {
+    font-size: 15px;
   }
 
   header .container .goal::after {
@@ -220,95 +220,87 @@ header .container .my-links .link a {
   }
 
   header .container .my-links {
-    min-width: 120%;
-    margin: 12px 0 0 -75px;
+    margin: 12px 0 0 0;
   }
 
   header .container .my-links .link {
-    font-size: 20px;
+    font-size: 14px;
     width: 100%;
   }
 }
 
 @media (max-width: 500px) {
   header .my-photo {
-    top: 7vh;
+    top: 5vh;
   }
 
   header .orange-bg {
-    height: 38vh;
+    height: 30vh;
   }
 
   header .container {
     width: 50%;
     left: 45%;
-    top: 7vh;
+    top: 5vh;
   }
 
   header .container h1 {
-    font-size: 42px;
-    margin-left: -40px;
+    font-size: 34px;
+    margin-left: -35px;
   }
 
   header .container h2,
   h3 {
-    font-size: 22px;
+    font-size: 17px;
+    font-weight: 400;
     letter-spacing: 2px;
   }
 
-  header .container .goal{
-    font-size: 18px;
+  header .container .goal {
+    font-size: 14px;
   }
 
   header .container .goal::after {
     content: url(./img/линия_3.png);
-  }
-
-  header .container .contacts{
-    margin-left: -95px;
-  }
-
-  header .container .my-links {
-    min-width: 120%;
-    margin: 12px 0 0 -95px;
+    margin-top: 0;
   }
 
   header .container .my-links .link {
-    list-style: none;
-    font-size: 18px;
+    font-size: 11px;
     width: 100%;
   }
 }
 
-@media (max-width: 360px){
-      header .orange-bg {
-        height: 32vh;
-      }
-    
-      header .container h1 {
-        font-size: 33px;
-        margin-left: -30px;
-      }
-    
-      header .container h2,
-      h3 {
-        font-size: 18px;
-        letter-spacing: 2px;
-      }
+@media (max-width: 360px) {
+  header .orange-bg {
+    height: 22vh;
+  }
 
-      header .container .goal{
-        font-size: 16px;
-      }
+  header .container h1 {
+    font-size: 26px;
+    margin-left: -25px;
+  }
 
-      header .container .contacts{
-        margin-left: -60px;
-      }
-    
-      header .container .my-links {
-        margin: 12px 0 0 -65px;
-      }
-    
-      header .container .my-links .link {
-        font-size: 14px;
-      }
+  header .container h2,
+  h3 {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  header .container .goal {
+    font-size: 12px;
+  }
+
+  header .container .contacts {
+    margin-left: -10px;
+  }
+
+  header .container .my-links {
+    margin-left: -20px;
+  }
+
+  header .container .my-links .link {
+    list-style: none;
+    font-size: 11px;
+  }
 }
