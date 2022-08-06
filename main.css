@@ -8,14 +8,7 @@
 main {
   position: relative;
   width: 100%;
-  margin-top: 54vh;
-}
-
-main .black-block {
-  position: absolute;
-  display: block;
-  left: 87%;
-  bottom: 0;
+  margin-top: 12%;
 }
 
 main .about-me {
@@ -23,7 +16,7 @@ main .about-me {
   background-size: 60%;
   background-position-x: 150%;
   padding: 5% 7%;
-  position: absolute;
+  position: relative;
   width: 100%;
   font-family: "Montserrat", sans-serif;
 }
@@ -227,11 +220,7 @@ main .card .my-hobbies .hobby span {
 
 @media (max-width: 1500px) {
   main {
-    margin-top: 46vh;
-  }
-
-  main .black-block {
-    width: 50px;
+    margin-top: 14%;
   }
 
   main .about-me {
@@ -328,11 +317,7 @@ main .card .my-hobbies .hobby span {
 
 @media (max-width: 1060px) {
   main {
-    margin-top: 52vh;
-  }
-
-  main .black-block {
-    width: 50px;
+    margin-top: 23%;
   }
 
   main .about-me {
@@ -416,11 +401,7 @@ main .card .my-hobbies .hobby span {
 
 @media (max-width: 800px) {
   main {
-    margin-top: 54vh;
-  }
-
-  main .black-block {
-    width: 40px;
+    margin-top: 30%;
   }
 
   main .about-me {
@@ -550,9 +531,15 @@ main .card .my-hobbies .hobby span {
   }
 }
 
+@media (max-width: 560px) {
+  main {
+    margin-top: 42%;
+  }
+}
+
 @media (max-width: 500px) {
   main {
-    margin-top: 48vh;
+    margin-top: 54%;
   }
 
   main .black-block {
@@ -682,5 +669,11 @@ main .card .my-hobbies .hobby span {
 
   main .card .my-hobbies .hobby span {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 390px) {
+  main {
+    margin-top: 68%;
   }
 }

@@ -15,7 +15,7 @@ header .my-photo {
   display: block;
   width: 25%;
   height: auto;
-  position: absolute;
+  position: relative;
   top: 12vh;
   left: 12%;
   z-index: 5;
@@ -25,7 +25,7 @@ header .circle-bg {
   display: block;
   width: 25%;
   margin-left: auto;
-  margin-top: auto;
+  margin-bottom: auto;
 }
 
 header .orange-bg {
@@ -55,7 +55,8 @@ header .container h1 {
   position: relative;
 }
 
-header .container h2, h3 {
+header .container h2,
+h3 {
   font-size: 38px;
   font-weight: 100;
   color: #000000;
@@ -100,9 +101,13 @@ header .container .my-links .link a {
     height: 48vh;
   }
 
+  header .my-photo {
+    top: 10vh;
+  }
+
   header .container {
     width: 50%;
-    left: 42%;
+    top: 10vh;
   }
 
   header .container h1 {
@@ -137,7 +142,7 @@ header .container .my-links .link a {
   header .my-photo {
     width: 30%;
     left: 8%;
-    top: 7vh;
+    top: 6vh;
   }
 
   header .circle-bg {
@@ -151,7 +156,7 @@ header .container .my-links .link a {
   header .container {
     width: 47%;
     left: 42%;
-    top: 8vh;
+    top: 6vh;
   }
 
   header .container h1 {
@@ -164,13 +169,13 @@ header .container .my-links .link a {
     font-size: 26px;
   }
 
-  header .container .goal{
+  header .container .goal {
     font-size: 16px;
   }
 
   header .container .goal::after {
     content: url(./img/линия_2.png);
-    margin: 8px auto 0 0;
+    margin: 0 auto 0 0;
   }
 
   header .container .my-links {
@@ -209,7 +214,7 @@ header .container .my-links .link a {
 
   header .container h2,
   h3 {
-    font-size: 24px;
+    font-size: 22px;
     letter-spacing: 4px;
     margin-top: 12px;
   }
@@ -260,7 +265,7 @@ header .container .my-links .link a {
   }
 
   header .container .goal {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   header .container .goal::after {
